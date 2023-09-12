@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h4>Hi, {{ user.username }}!</h4>
+        {% for book in books %}
+        <div><p><h5>{{ book.author }}</h5></p></div>
+        <div><p><h1>{{ book.title }}</h1></p></div>
+        <div><p><h3>Price: {{ book.price }}$</h3></p></div>
+        <br><br>
+        <div><p>publisher - {{ book.publisher }}</p></div>
+        <div><p>publish date - {{ book.publish_date }}</p></div>
+        <div><p>language - {{ book.language }}</p></div>
+        <div><p>genre - {{ book.genre }}</p></div>
+        <div><p>pages - {{ book.pages }}</p></div>
+        <div><p>type - {{ book.type }}</p></div>
+        <div><p>uen/upc - {{ book.uen_upc }}</p></div>
+        <br><br>
+
+        <div><p>{{ book.desсription }}</p></div>
+        <hr>
+        {% endfor %}
+{% endblock %}
