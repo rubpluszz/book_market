@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+    
+
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block content %}
+    <h1>Sign In</h1>
+    <form action="" method="post" novalidate>
+        {{ render_form(form) }}
+{% endblock %}
